@@ -11,24 +11,75 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light">
         <a class="navbar-brand" href="#">
-            <img src="imagens/global-labs.jpeg" alt="logo da global labs" width="100" height="90">
+            <img src="imagens/global-labs.png" alt="logo da global labs" width="100" height="90">
         </a>
         <div class="collapse navbar-collapse">
             <ul class="navbar-nav">
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Quem somos
+                    <a class="nav-link" href="#quemsomos">Quem somos
+                    </a><!--#quemsomos é um link interno, leva até a section com id=quemsomos-->
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#parceiros">Parceiros
                     </a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Parceiros
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Serviços
+                    <a class="nav-link" href="#servicos">Serviços
                     </a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <section id="quemsomos">
+        <div class="container-fluid text-center margin quem-somos">
+            <!--container-fluid é uma classe do bootstrap onde o container ocupa toda largura da página/ text-center também é uma classe do bootstrap que centraliza o texto-->
+            <h3>Quem somos</h3>
+            <img class="rounded-circle" src="imagens/time.jpg" alt="pessoas dando a mão" width="400" height="400"><!--rounded-circle é uma classe do bootstrap onde a imagem fica arredondada, para ficar um circulo perfeito é necessário q as dimensões da imagem sejam quadradas-->
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ad qui repellat dolorum, expedita nisi aperiam hic quas, voluptates autem fugiat eveniet! Fugiat adipisci quod quasi laboriosam, voluptates rerum asperiores itaque.</p>
+        </div>
+    </section>
+
+    <section id="parceiros"><!--atentar-se no css para id e class com mesmo nome-->
+        <div class="container-fluid text-center margin parceiros">
+            <h3 class="margin">Parceiros</h3>
+            <!--NO BOOTSTRAP A TELA É DIVIDIDA EM 12 PARTES IGUAIS NA HORIZONTAL, PARA SEPARAR O LAYOUT EM 3 COLUNAS, FICARÁ 3 CONJUNTOS DE 4, E ASSIM PARA OS LAYOUTS COM MAIS OU MENOS COLUNAS-->    
+            <div class="container"><!--aqui começa a divisão da section em 3 colunas, primeiro inicia um container-->
+                <div class="row"><!--na sequencia inicia a linha-->
+                    <div class="col-lg-4"><!--e por ultimo a coluna-->
+                        <img src="imagens/dio.png" alt="logo da DIO" width="100%">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="imagens/dio.png" alt="logo da DIO" width="100%">
+                    </div>
+                    <div class="col-lg-4">
+                        <img src="imagens/dio.png" alt="logo da DIO" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos"><!--atentar-se no css para id e class com mesmo nome-->
+        <div class="container-fluid text-center margin servicos">
+            <h3 class="margin">Serviços</h3>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6"><!--DIVIDINDO O LAYOUT DESTA section EM DUAS COLUNAS APENAS, POR ISSO O lg-6-->
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, iure magni fugiat cumque repudiandae maiores voluptatibus, laboriosam rerum explicabo quisquam iste reprehenderit cum quae corrupti. Harum unde dolore ut rerum?</p>    
+                        <img src="imagens/app.jpeg" width="100%">
+                    </div>
+                    <div class="col-lg-6">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, iure magni fugiat cumque repudiandae maiores voluptatibus, laboriosam rerum explicabo quisquam iste reprehenderit cum quae corrupti. Harum unde dolore ut rerum?</p>  
+                        <img src="imagens/site1.jpeg" width="100%">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid text-center margin bg-footer">
+       &copy Todos os direitos reservados
+    </footer>
 </body>
 </html>
